@@ -33,19 +33,19 @@ int main() {
     //3. Assess the input file and determine the Number of records and the Max record length
     assessRecordDetails(inputFilename, recordDetailsAry);
 
-    //Initialise the dataStorageArray for the determined Number of records and the Max record length
+    //4. Initialise the dataStorageArray for the determined Number of records and the Max record length
     dataStorageAry = initDataStorageArray(dataStorageAry, recordDetailsAry[0], recordDetailsAry[1]);
 
-    //Populate the dataStorageArray with the data from the input file
+    //5. Populate the dataStorageArray with the data from the input file
     populateDataArray(inputFilename, dataStorageAry, recordDetailsAry[0]);
 
-    //Sort the dataStorageArray
+    //6. Sort the dataStorageArray
     bubbleSort(dataStorageAry, recordDetailsAry[0]);
 
-    //Save the Sorted data to the specified output file
+    //7. Save the Sorted data to the specified output file
     outputArrayDataToFile(outputFilename, dataStorageAry, recordDetailsAry[0]);
 
-    //Assuming successful completion of the program...
+    //8. Assuming successful completion of the program...
     return 0;
 
 }//End of main()
